@@ -1,0 +1,58 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baghaei and Hohensinn(2017)]{baghaei2017}
+Purya Baghaei and Christine Hohensinn.
+\newblock A method of {Q}-matrix validation for the linear logistic test model.
+\newblock \emph{Frontiers in Psychology}, 8:\penalty0 897, 2017.
+
+\bibitem[De~Boeck and Wilson(2004)]{deboeck2004}
+Paul De~Boeck and Mark Wilson.
+\newblock \emph{Explanatory Item Response Models: A Generalized Linear and
+  Nonlinear Approach}.
+\newblock Springer, 2004.
+
+\bibitem[Embretson and Reise(2000)]{embretson2000}
+Susan~E Embretson and Steven~P Reise.
+\newblock \emph{Item Response Theory for Psychologists}.
+\newblock Lawrence Erlbaum, 2000.
+
+\bibitem[Fischer(1973)]{fischer1973}
+Gerhard~H Fischer.
+\newblock The linear logistic test model as an instrument in educational
+  research.
+\newblock \emph{Acta Psychologica}, 37:\penalty0 359--374, 1973.
+
+\bibitem[Ge et~al.(2026)Ge, Kryvosheieva, Fried, Girit, and
+  Hariharan]{ge2026agent}
+Chris Ge, Daria Kryvosheieva, Daniel Fried, Uzay Girit, and Kaivalya Hariharan.
+\newblock Agent psychometrics: Task-level performance prediction in agentic
+  coding benchmarks.
+\newblock In \emph{ICLR 2026 Workshop on Agents in the Wild}, 2026.
+\newblock arXiv:2604.00594.
+
+\bibitem[Kang(2026)]{kang2026scaling}
+Jung~Min Kang.
+\newblock The scaling law of evaluation failure: Why simple averaging collapses
+  under data sparsity and item difficulty gaps, and how item response theory
+  recovers ground truth across domains.
+\newblock \emph{arXiv preprint arXiv:2605.11205}, 2026.
+
+\bibitem[Truong et~al.(2025)Truong, Tu, Liang, Li, and
+  Koyejo]{truong2025reliable}
+Sang~T. Truong, Yuheng Tu, Percy Liang, Bo~Li, and Sanmi Koyejo.
+\newblock Reliable and efficient amortized model-based evaluation.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning}, 2025.
+\newblock arXiv:2503.13335.
+
+\bibitem[Zhang et~al.(2025)Zhang, Hu, Lu, Lange, and Clune]{zhang2025darwin}
+Jenny Zhang, Shengran Hu, Cong Lu, Robert~Tjarko Lange, and Jeff Clune.
+\newblock Darwin godel machine: Open-ended evolution of self-improving agents.
+\newblock \emph{arXiv preprint arXiv:2505.22954}, 2025.
+
+\end{thebibliography}

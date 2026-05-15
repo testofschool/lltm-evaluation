@@ -1,0 +1,339 @@
+{
+  "exp1_sparsity": {
+    "1.0": {
+      "avg": {
+        "mean": 0.992,
+        "se": 0.002
+      },
+      "irt": {
+        "mean": 0.9891,
+        "se": 0.002
+      },
+      "lltm": {
+        "mean": 0.992,
+        "se": 0.002
+      },
+      "2step": {
+        "mean": 0.992,
+        "se": 0.002
+      }
+    },
+    "0.7": {
+      "avg": {
+        "mean": 0.9875,
+        "se": 0.004
+      },
+      "irt": {
+        "mean": 0.9797,
+        "se": 0.004
+      },
+      "lltm": {
+        "mean": 0.9882,
+        "se": 0.004
+      },
+      "2step": {
+        "mean": 0.9882,
+        "se": 0.004
+      }
+    },
+    "0.5": {
+      "avg": {
+        "mean": 0.981,
+        "se": 0.006
+      },
+      "irt": {
+        "mean": 0.9694,
+        "se": 0.006
+      },
+      "lltm": {
+        "mean": 0.9835,
+        "se": 0.006
+      },
+      "2step": {
+        "mean": 0.984,
+        "se": 0.006
+      }
+    },
+    "0.3": {
+      "avg": {
+        "mean": 0.956,
+        "se": 0.01
+      },
+      "irt": {
+        "mean": 0.9464,
+        "se": 0.01
+      },
+      "lltm": {
+        "mean": 0.9605,
+        "se": 0.01
+      },
+      "2step": {
+        "mean": 0.958,
+        "se": 0.01
+      }
+    },
+    "0.1": {
+      "avg": {
+        "mean": 0.8886,
+        "se": 0.02
+      },
+      "irt": {
+        "mean": 0.8409,
+        "se": 0.02
+      },
+      "lltm": {
+        "mean": 0.8829,
+        "se": 0.02
+      },
+      "2step": {
+        "mean": 0.8886,
+        "se": 0.02
+      }
+    }
+  },
+  "exp2_noisy_features": {
+    "n0_s1.0": {
+      "lltm": {
+        "mean": 0.9917,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9917,
+        "se": null
+      }
+    },
+    "n0_s0.5": {
+      "lltm": {
+        "mean": 0.9772,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9785,
+        "se": null
+      }
+    },
+    "n5_s1.0": {
+      "lltm": {
+        "mean": 0.9907,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9907,
+        "se": null
+      }
+    },
+    "n5_s0.5": {
+      "lltm": {
+        "mean": 0.9795,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9791,
+        "se": null
+      }
+    },
+    "n20_s1.0": {
+      "lltm": {
+        "mean": 0.9918,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9918,
+        "se": null
+      }
+    },
+    "n20_s0.5": {
+      "lltm": {
+        "mean": 0.9792,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9789,
+        "se": null
+      }
+    }
+  },
+  "exp3_missing_feature": {
+    "complete_s1.0": {
+      "irt": {
+        "mean": 0.9875,
+        "se": null
+      },
+      "lltm": {
+        "mean": 0.9904,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9904,
+        "se": null
+      }
+    },
+    "missing_s1.0": {
+      "irt": {
+        "mean": 0.9875,
+        "se": null
+      },
+      "lltm": {
+        "mean": 0.9904,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9904,
+        "se": null
+      }
+    },
+    "complete_s0.3": {
+      "irt": {
+        "mean": 0.9497,
+        "se": null
+      },
+      "lltm": {
+        "mean": 0.9674,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9663,
+        "se": null
+      }
+    },
+    "missing_s0.3": {
+      "irt": {
+        "mean": 0.9497,
+        "se": null
+      },
+      "lltm": {
+        "mean": 0.9735,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9723,
+        "se": null
+      }
+    }
+  },
+  "exp4_nonlinear": {
+    "lin_s1.0": {
+      "lltm": {
+        "mean": 0.9863,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9863,
+        "se": null
+      }
+    },
+    "nl_s1.0": {
+      "lltm": {
+        "mean": 0.9871,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9871,
+        "se": null
+      }
+    },
+    "lin_s0.3": {
+      "lltm": {
+        "mean": 0.9609,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9602,
+        "se": null
+      }
+    },
+    "nl_s0.3": {
+      "lltm": {
+        "mean": 0.9531,
+        "se": null
+      },
+      "2step": {
+        "mean": 0.9586,
+        "se": null
+      }
+    }
+  },
+  "exp5_unseen_items": {
+    "0.9": {
+      "lltm": {
+        "mean": 0.76,
+        "se": 0.074
+      },
+      "2step": {
+        "mean": 0.77,
+        "se": 0.075
+      }
+    },
+    "0.7": {
+      "lltm": {
+        "mean": 0.863,
+        "se": 0.013
+      },
+      "2step": {
+        "mean": 0.844,
+        "se": 0.01
+      }
+    },
+    "0.5": {
+      "lltm": {
+        "mean": 0.868,
+        "se": 0.013
+      },
+      "2step": {
+        "mean": 0.825,
+        "se": 0.025
+      }
+    },
+    "0.3": {
+      "lltm": {
+        "mean": 0.856,
+        "se": 0.02
+      },
+      "2step": {
+        "mean": 0.797,
+        "se": 0.042
+      }
+    }
+  },
+  "exp6_weight_recovery": {
+    "feature_names": [
+      "reasoning_depth",
+      "domain_spec",
+      "prompt_complex",
+      "answer_ambig",
+      "context_len"
+    ],
+    "true_weights": [
+      1.5,
+      0.8,
+      0.6,
+      1.2,
+      0.3
+    ],
+    "lltm_normalized": [
+      1.002,
+      0.922,
+      0.511,
+      1.703,
+      0.262
+    ],
+    "twostep_normalized": [
+      1.088,
+      0.964,
+      0.503,
+      1.629,
+      0.215
+    ]
+  },
+  "config": {
+    "n_models": 25,
+    "n_items": 100,
+    "n_features": 5,
+    "n_seeds": 5,
+    "random_seed_base": 42
+  },
+  "_schema": {
+    "note": "SE values are computed from 5 seeds where available. Experiments 2-4 report means only (SE not plotted in figures). Experiments 1 and 5 include SE values used for error bars in Figures 1 and 2d.",
+    "format": "{mean: float, se: float|null}"
+  }
+}
