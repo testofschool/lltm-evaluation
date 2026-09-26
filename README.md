@@ -18,16 +18,16 @@ python experiment.py
 - `references.bib` — BibTeX source
 - `experiment.py` — Complete experiment and figure generation
 - `requirements.txt` — Python dependencies
-- `results.json` — Precomputed results from the exact run used to generate figures
+- `results.json` — Results written by `python experiment.py` (regenerated from the script as committed; an earlier version of this file contained hand-added fields — a `_schema` key, `"se": null` for Experiments 2–4, and rounded Experiment 1 standard errors — that the script does not emit)
 - `figures/` — PDF figures
 
 ## Citation
 
 ```bibtex
-@article{kang2026lltm,
+@misc{kang2026lltm,
   title={Explaining Benchmark Difficulty: Linear Logistic Test Models for Feature-Based AI Evaluation},
   author={Kang, Jung Min},
-  journal={arXiv preprint},
+  note={Manuscript},
   year={2026}
 }
 ```
