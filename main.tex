@@ -28,10 +28,14 @@ Seoul, South Korea}
 \maketitle
 
 \begin{abstract}
-Standard Item Response Theory (IRT) corrects the ranking failures caused
-by simple benchmark averaging under sparse evaluation conditions
-\citep{kang2026scaling}, but treats each item as opaque---it estimates
-\emph{how hard} items are without explaining \emph{why}. Recent work
+In a synthetic grid with difficulty-biased missingness
+\citep{kang2026scaling}, standard Item Response Theory (IRT) corrects the
+ranking failures caused by simple benchmark averaging under sparse
+evaluation conditions; in this paper's simulation setting, however,
+unregularized 2PL IRT does not beat simple averaging (it is lower at all
+five tested missing-data levels). Standard IRT also treats each item as
+opaque---it estimates \emph{how hard} items are without explaining
+\emph{why}. Recent work
 predicts item difficulty from features via two-step pipelines that first
 fit IRT, then regress on features \citep{ge2026agent}, or via
 amortized joint models \citep{truong2025reliable}. We systematically
@@ -61,8 +65,8 @@ exhaustive model evaluation.
 \citet{kang2026scaling} demonstrated that simple averaging of benchmark
 scores produces unreliable model rankings when evaluation data is sparse
 and items vary in difficulty, with simple-average rankings degrading
-substantially under sparse, heterogeneous evaluation matrices. Standard two-parameter logistic (2PL) IRT maintained
-$\rho \geq 0.993$ across all conditions. However, standard IRT treats
+substantially under sparse, heterogeneous evaluation matrices. In a synthetic grid sweep, standard two-parameter logistic (2PL) IRT had
+a minimum cell-mean $\rho$ of $0.9927$ ($\approx 0.993$). However, standard IRT treats
 each benchmark item as an opaque entity with a fixed difficulty parameter,
 creating three practical limitations:
 
@@ -244,7 +248,7 @@ by leveraging item features for implicit regularization.
 \centering
 \small
 \caption{Ranking recovery (Spearman~$\rho$, mean over 5 seeds).
-Bold: best per row. LLTM and two-step achieve comparable performance,
+Bold: best per row at the displayed precision (ties all bold). LLTM and two-step achieve comparable performance,
 generally improving over unregularized standard IRT at higher sparsity.}
 \label{tab:sparsity}
 \begin{tabular}{lcccc}
@@ -252,9 +256,9 @@ generally improving over unregularized standard IRT at higher sparsity.}
 Missing & Averaging & IRT (2PL) & LLTM & Two-Step \\
 \midrule
 0\%  & \textbf{0.992} & 0.989 & \textbf{0.992} & \textbf{0.992} \\
-30\% & 0.988 & 0.980 & \textbf{0.988} & \textbf{0.988} \\
-50\% & 0.981 & 0.969 & 0.984 & \textbf{0.984} \\
-70\% & 0.956 & 0.946 & \textbf{0.961} & 0.958 \\
+30\% & 0.987 & 0.980 & \textbf{0.988} & \textbf{0.988} \\
+50\% & 0.981 & 0.969 & \textbf{0.984} & \textbf{0.984} \\
+70\% & 0.956 & 0.946 & \textbf{0.960} & 0.958 \\
 90\% & \textbf{0.889} & 0.841 & 0.883 & \textbf{0.889} \\
 \bottomrule
 \end{tabular}
@@ -276,8 +280,9 @@ Figure~\ref{fig:stress} reports results for four stress tests.
 
 \paragraph{Noisy features (Fig.~\ref{fig:stress}a).}
 Adding up to 20 irrelevant features causes minimal degradation for both
-methods. LLTM maintains $\rho \geq 0.991$ with 20 noise features,
-slightly outperforming two-step ($\rho = 0.986$).
+methods. With 20 noise features, LLTM and two-step are tied at full data
+($\rho = 0.992$ for both) and nearly identical at 50\% missing data
+(LLTM $\rho = 0.9792$ vs.\ two-step $0.9789$).
 This pattern is consistent with regularization suppressing
 irrelevant feature weights.
 
@@ -303,7 +308,7 @@ LLTM outperforms two-step ridge for difficulty prediction at 70\%,
 50\%, and 30\% training fractions, with the clearest advantage under
 lower training coverage. At 30\% training, LLTM shows the largest
 observed gap:
-$\rho = 0.856$ vs.\ $0.797$. At 90\% training, two-step is slightly
+$\rho = 0.855$ vs.\ $0.797$. At 90\% training, two-step is slightly
 higher ($0.770$ vs.\ $0.760$), likely reflecting noise from the small
 held-out set. Standard IRT cannot perform this task at all.
 
@@ -332,8 +337,9 @@ distributions when constructing new benchmarks.
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.85\linewidth]{fig3_weights.pdf}
-\caption{Feature weight recovery. Both LLTM and two-step correctly
-identify the relative importance of difficulty predictors.}
+\caption{Feature weight recovery. Both LLTM and two-step recover the
+importance ranking of difficulty predictors with Spearman $\rho = 0.90$
+(the top two features, reasoning depth and answer ambiguity, are swapped).}
 \label{fig:weights}
 \end{figure}
 
@@ -364,7 +370,7 @@ joint log-likelihood on their agentic coding data. Our results add
 nuance: for \emph{ranking recovery}, LLTM and two-step perform
 comparably across all conditions tested. For \emph{difficulty
 prediction on unseen items}, LLTM shows its largest observed advantage
-at lower training fractions in this controlled simulation ($\rho = 0.856$
+at lower training fractions in this controlled simulation ($\rho = 0.855$
 vs.\ $0.797$ at 30\% training). This suggests the choice depends on the
 application: two-step when simplicity and modularity are prioritized;
 joint estimation when difficulty prediction and benchmark design are
